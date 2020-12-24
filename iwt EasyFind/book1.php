@@ -50,7 +50,7 @@
   <h2 style="text-align: center;">Missing and found items list</h2>
  
   <div class="btn-group">
-  
+  <!-- 1 link to missing items list and 1 link to found items list for books category -->
     <a href="displaybook.php" class="btn btn-primary" style="margin:100px">Click here to go to the missing items list</a>
     <a href="displaybookfound.php" class="btn btn-primary" style="margin:100px">Click here to go to found items list</a>
     

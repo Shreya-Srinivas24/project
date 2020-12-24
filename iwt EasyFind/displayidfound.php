@@ -9,10 +9,11 @@ body{
 </head>
 <body>
 <center>
+ <!-- list of found items for id section -->
 <h3>LIST OF FOUND ITEMS</h3>
 <form action="" method="POST" enctype="multipart/form-data">
 <table width="50%" border="1" cellpadding="5" cellspacing="5">
-
+ <!-- table for the list -->
 <thread>
 <tr>
 <th>name of the owner</th>
@@ -23,6 +24,7 @@ body{
 <th>image</th>
 <tr>
 </thread>
+<!-- get all information stored in database and display -->
 <?php
 $con=mysqli_connect("localhost","root","","iwtproject");
 $db=mysqli_select_db($con,'iwtproject');

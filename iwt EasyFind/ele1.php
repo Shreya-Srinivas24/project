@@ -48,7 +48,7 @@
   <h2 style="text-align: center;">Missing and found items list</h2>
  
   <div class="btn-group">
-  
+  <!-- 1 link to missing items list and 1 link to found items list for electronics category -->
     <a href="displayelec.php" class="btn btn-primary" style="margin:100px">Click here to go to the missing items list</a>
     <a href="displayelecfound.php" class="btn btn-primary" style="margin:100px">Click here to go to found items list</a>
     

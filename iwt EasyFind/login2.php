@@ -30,7 +30,7 @@
   </div>
   <form method="post" action="login2.php">
   
-  
+   <!-- login to the account that already exists -->
   	<?php include('errors2.php'); ?>
   	<div class="input-group">
   		<label>Username</label>

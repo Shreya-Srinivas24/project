@@ -48,7 +48,7 @@
 
 <div class="container">
   <h2 style="text-align: center;">Missing and found items list</h2>
- 
+ <!-- 1 link to missing items list and 1 link to found items list for personal items category -->
   <div class="btn-group">
   
     <a href="displayper.php" class="btn btn-primary" style="margin:100px">Click here to go to the missing items list</a>

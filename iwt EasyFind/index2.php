@@ -1,4 +1,5 @@
 <?php 
+// Start the session
   session_start(); 
   if (!isset($_SESSION['username'])) {
     $_SESSION['msg'] = "You must log in first";
@@ -19,7 +20,7 @@
 <div class="topnav bg-light">
   <a class="active" href="#home">Home</a>
   <div class="topnav-right">
-    
+    <!-- logout button -->
     <a  href="index2.php?logout='1'" tabindex="-1" aria-disabled="true" style="color:black"><b>LOGOUT</b></a>
   </div>
 </div>
@@ -120,8 +121,9 @@ background-size:cover;
 
 	
   <div class="col-sm-6 "   style="margin:auto;">
-  	
-  	
+  	<!-- using cards from bootstrap to make 4 sections for different categories -->
+    <!-- 3 different buttons for each cateory -->
+    <!-- form for missing items,form for found items, list of missing and found items -->
 <div class="card" >
   <img src="personal.jpg" class="card-img-top" alt="...">
   <div class="card-body">
