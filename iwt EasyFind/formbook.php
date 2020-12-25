@@ -11,6 +11,7 @@
            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
 </head>
+	<!--styling for form-->
 <style>
            body
              {
@@ -40,7 +41,7 @@
              </style>
             
           
-
+<!--create form -->
 <body>
 <form action="" method="POST" enctype="multipart/form-data">
 <div style="margin:10px">
@@ -64,7 +65,7 @@
 	 
     <input type="file" name="image" id="image" />  
         </div>  
-    
+    <!--create submit button-->
 	   <input type="submit" name="upload" value="SUBMIT"/> <br>
 </div>
 <div>
@@ -74,7 +75,7 @@
 		</form>
 </body>
 </html>
-      
+      <!-- connecting to database -->
       <?php
     $con=mysqli_connect("localhost","root","","iwtproject");
     $db=mysqli_select_db($con,'iwtproject');
@@ -87,6 +88,7 @@
 		$des=$_POST['des'];
 		$location=$_POST['location'];
 	 $file=addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
+	 //insert values into database
 $query="INSERT INTO `book`(`owner`,`typeid`,`phone`,`des`,`location`,`tb1image`) VALUES('$owner','$typeid','$phone','$des','$location','$file')"; 
 	$query_run=mysqli_query($con,$query);		
             
